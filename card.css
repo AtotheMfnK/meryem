@@ -1,0 +1,16 @@
+.cardContainer {
+    display: flex;
+    width: 100;
+    background-color:aqua;
+}
+
+.card {
+  display: 50rem;
+  background-color: brown;
+  width: 30em;
+}
+
+.card img {
+
+}
+
