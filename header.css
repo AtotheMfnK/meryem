@@ -1,21 +1,107 @@
 .header {
     display: flex;
     position: relative;
-    max-width: 100%;
-    height: 50vh;
+    width: 100vw;
     overflow: hidden;
     justify-content: center;
 }
 
 .headerContainer {
  display: flex;
+ width: 90%;
  object-fit: contain;
  justify-content: center;
  padding: 1rem;
  margin: 1rem;
  margin: auto 0;
 }
-.headerContainer img {
-    width: 50%;
-    margin: auto 0;
+
+.headerContainerElement {
+display: block;
+width: 100vw;
+text-align: center;
+display: none;
+}
+
+.headerContainerElementBelow {
+ display: flex;
+ width: 90vw;
+ flex-direction: row-reverse;
+ padding: 1rem;
+ gap: 1rem;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ position: relative;
+}
+
+
+.headerContainerElementBelow img {
+display: flex;
+width: 70%;
+align-items: center;
+align-content: center;
+justify-content: center;
+}
+
+.headerContainerElementBelow p {
+  background-color: rgba(255, 0, 0, 0.7);
+  font-size: 5.5rem;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  position: absolute; /* Überlagert den normalen Flow */
+  top: 50%; /* Beispielwerte, anpassen nach Bedarf */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Zentriert das p-Element */
+  width: 50rem;
+  overflow: visible;
+  z-index: 10; /* Sicherstellen, dass es über dem Bild liegt */
+}
+
+
+@media screen and (max-width: 760px) { 
+
+.header {
+display: flex;
+position: relative;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+background-color: yellow;
+}
+
+.headerContainer {
+ display: flex;
+ width: 90vw;
+ flex-direction: column;
+ padding: 1rem;
+ margin: auto 0;
+}
+
+.headerContainerElement {
+display: block;
+width: 100vw;
+text-align: center;
+}
+
+.headerContainerElementBelow {
+display: flex;
+ width: 90vw;
+ flex-direction: column;
+ padding: 1rem;
+ gap: 1rem;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+}
+
+.headerContainerElementBelow img {
+    display: flex;
+width: 20%;
+align-items: center;
+align-content: center;
+justify-content: center;
+
+}
 }

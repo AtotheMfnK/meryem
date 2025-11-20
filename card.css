@@ -1,16 +1,112 @@
-.cardContainer {
-    display: flex;
-    width: 100;
-    background-color:aqua;
+.cardSection {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0 0 30%;
+  width: 100vw;
+  background-color: rgb(55, 0, 255);
+  position: relative;
 }
 
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: aqua;
+  text-align: centre;
+  margin: 90px 20px;
+}
+
+
 .card {
-  display: 50rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: brown;
-  width: 30em;
+  width: 100%;
+  margin: auto 0;
 }
 
 .card img {
-
+  max-width: 80%;
+  margin: auto 0;
 }
 
+
+.cardContainerTextElements {
+  align-items: left;
+}
+
+.cardInfo {
+  max-width: 80%;
+  padding-left: 0;
+  margin-left: calc(10%);
+}
+
+.cardInfo h4 {
+  padding-top: 10px;
+  font-size: 2.6rem;
+}
+
+.cardInfo p {
+  padding-top: 4px;
+  font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 680px) {
+  .cardSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-basis: 0 0 30%;
+    background-color: rgb(55, 0, 255);
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: aqua;
+    text-align: centre;
+    margin: 10px 5px;
+  }
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: brown;
+    width: 100%;
+    margin: auto 0;
+  }
+
+  .card img {
+    max-width: 80%;
+    margin: auto 0;
+  }
+
+
+  .cardContainerTextElements {
+    align-items: left;
+  }
+
+  .cardInfo {
+    width: 80%;
+    padding-left: 0;
+    margin-left: calc(10%);
+  }
+
+  .cardInfo h4 {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
+
+  .cardInfo p {
+    padding-top: 4px;
+    font-size: 0.8rem;
+  }
+
+}
