@@ -1,7 +1,6 @@
 .cardSection {
   display: flex;
   flex-direction: row;
-  flex-basis: 0 0 30%;
   width: 100vw;
   background-color: rgb(55, 0, 255);
   position: relative;
@@ -10,6 +9,7 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
+  flex-basis: 0 0 30%;
   width: 30%;
   background-color: aqua;
   text-align: centre;

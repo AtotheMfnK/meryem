@@ -1,1 +1,55 @@
-.nav {}
+.navigation {
+    display: inline-flex;
+    position: fixed;
+    background-color: rgb(161, 42, 165);
+    width: 100vw;
+    margin-bottom: 1px;
+
+}
+
+.logo {
+    background-color: rgb(42, 42, 189);
+    width: 20%;
+}
+
+.navigation #hamburger {
+    display: flex;
+    color: beige;
+    font-size: 1rem;
+    padding: 10px;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.navigation a {
+    color: white;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: inline-flex;
+        position: fixed;
+        background-color: rgb(161, 42, 165);
+        width: 100vw;
+        margin-bottom: 1px;
+    }
+
+    .logo {
+        background-color: rgb(42, 42, 189);
+        width: 20%;
+        position: 1oopx;
+    }
+
+    .nav li {
+        font-size: 1rem;
+        padding: 10px;
+        justify-content: space-around;
+        display: none;
+    }
+
+    .mobilenav {
+        display: flex;
+        flex-direction: column-gap: 3px;
+    }
+}
